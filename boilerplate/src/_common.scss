@@ -45,13 +45,29 @@
   line-height: normal;
 }
 
-.caption2 {
-  color: var(--)
-
+.posts__date {
+  color: var(--dark-color);
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.feat__header {
+  color: var(--c-light);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.75rem;
+}
+
+.post__header {
+  color: var(--dark-color);
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.75rem;
 }
 
 .paragraph {
