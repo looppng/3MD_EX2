@@ -125,6 +125,12 @@ body {
     order:2;
   }
 
+  .container__feat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .button-box {
     display: flex;
     flex-direction: column;
@@ -141,8 +147,25 @@ body {
   }
 
   .col-3 {
-    margin-top: 2rem;
     max-width: 100%;
     order:-1;
+  }
+
+  .h4 {
+    align-items: center;
+  }
+
+  .feat__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container__feat {
+    flex-direction: column;
+  }
+
+  .container__feat .col-3 {
+    order: -1;
   }
 }
