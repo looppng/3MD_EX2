@@ -7,6 +7,7 @@
   --bg-button: #FF6464;
   --c-nav: #000;
   --dark-color: #21243D;
+  --label-color: #142850;
   --c-light: #FFF;
   --c-grey: #8695A4;
 
@@ -50,6 +51,7 @@ body {
   padding: 3rem 0;  
 }
 
+
 .hero__img {
   // box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   aspect-ratio: 243/243;
@@ -88,6 +90,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-items: center;
+  gap: 15px;
+}
+
+.content-border {
+  display: inline-block;
+  background-color: var(--label-color);
+  color: var(--c-light);
+  border-radius: 10px;
+  padding: 2px 6px;
+  margin-right: 10px;
+
+  font-weight: 900;
 }
 
 .container__feat {
@@ -104,3 +118,31 @@ body {
   gap: 2rem;
 }
 
+@media (max-width: 768px) {
+  .hero__content {
+    text-align: center;
+    justify-items: center;
+    order:2;
+  }
+
+  .button-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__img {
+    flex-wrap: wrap;
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .col-3 {
+    margin-top: 2rem;
+    max-width: 100%;
+    order:-1;
+  }
+}
