@@ -1,3 +1,98 @@
+
+@import "./common.scss";
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap');
+
+:root {
+  --bg-color: #FFF;
+  --bg-button: #FF6464;
+  --c-nav: #000;
+  --dark-color: #21243D;
+  --c-light: #FFF;
+  --c-grey: #8695A4;
+
+
+  --bg-test: #bb01017d;
+  --bg-test2: #5ebb017d;
+}
+
+.bg-test {
+  background-color: var(--bg-test);
+}
+
+.bg-test2 {
+  background-color: var(--bg-test2);
+}
+
 body {
-  background-color: antiquewhite;
+  font-family: 'Heebo', sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.nav__item {
+  text-decoration: none;
+  color: var(--c-nav);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 0;  
+}
+
+.hero__img {
+  // box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  aspect-ratio: 243/243;
+  width: 100%;
+  max-width: 100%;
+}
+
+.bg-posts {
+    background-image: url('./assets/images/background.jpg');
+    background-size: cover; /* Scales the background image to cover the entire element */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+.posts-wrapper {
+  background-color: var(--c-light);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 20px 20px 20px;
+}
+
+.posts__date-wrapper {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.feat__img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.feat__content {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.container__feat {
+  display: flex;
+  gap: 1rem;
+  padding:1rem;
+  border-bottom: 2px solid #ccc;
 }
