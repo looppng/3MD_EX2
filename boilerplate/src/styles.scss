@@ -10,18 +10,6 @@
   --label-color: #142850;
   --c-light: #FFF;
   --c-grey: #8695A4;
-
-
-  --bg-test: #bb01017d;
-  --bg-test2: #5ebb017d;
-}
-
-.bg-test {
-  background-color: var(--bg-test);
-}
-
-.bg-test2 {
-  background-color: var(--bg-test2);
 }
 
 body {
@@ -53,7 +41,6 @@ body {
 
 
 .hero__img {
-  // box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   aspect-ratio: 243/243;
   width: 100%;
   max-width: 100%;
